@@ -348,3 +348,6 @@ body::-webkit-scrollbar-thumb:hover {
   width: 80px;
   border-radius: 50%;
 }
+canvas {
+  vertical-align: top;
+}
