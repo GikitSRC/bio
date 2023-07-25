@@ -264,6 +264,58 @@ body::-webkit-scrollbar-thumb:hover {
   0% { width: 0; }
   100% { width: 20%; }
 }
+.progress4 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  margin: auto;
+}
+
+.progress4-value {
+  animation: load15 8s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #04f500;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load15 {
+  0% { width: 0; }
+  100% { width: 15%; }
+}
+.progress5 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  margin: auto;
+}
+
+.progress5-value {
+  animation: load10 8s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #7f0099;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load10 {
+  0% { width: 0; }
+  100% { width: 10%; }
+}
 .footer {
   margin-top: 15px;
 }
