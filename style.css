@@ -364,6 +364,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 200px;
   width: 200px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .certimg:hover {
   transform: scale(2);
