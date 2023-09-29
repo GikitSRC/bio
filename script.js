@@ -12,7 +12,7 @@ function daysUntilSeptember23() {
   if (days === 0) {
     return "TODAY";
   } else {
-    return days + " days";
+    "in " + return days + " days";
   }
 }
 
