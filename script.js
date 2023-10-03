@@ -12,7 +12,7 @@ function daysUntilSeptember23() {
   if (days === 0) {
     return "TODAY IS MY BIRTHDAY OMFG THANKS FOR VISITNG MY BIO ON THIS SPECIAL DAY";
   } else {
-    "My birthday is fast approaching, and it will be in " + return days + " days";
+    return days;
   }
 }
 
