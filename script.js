@@ -1,19 +1,12 @@
-function daysUntilSeptember23() {
-  const today = new Date();
+const today = new Date();
   const targetDate = new Date(today.getFullYear(), 8, 23);
-
-  if (today > targetDate) {
-    targetDate.setFullYear(targetDate.getFullYear() + 1);
-  }
-
-  const timeDiff = targetDate.getTime() - today.getTime();
-  const days = Math.ceil(timeDiff / (1000 * 3600 * 24));
-
-  if (days === 0) {
-    return "TODAY IS MY BIRTHDAY!!!! THANKS FOR VISITING MY BIO TODAY!!!!";
+  const timeDifference = targetDate - today;
+  const daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+  const countdownElement = document.getElementById('countdown');
+  if (daysRemaining === 0) {
+    countdownElement.textContent = "YAY TODAY IS MY BIRTHDAY THANKS FOR VISITING MY BIO TODAY!";
+  } else if (daysRemaining === 1) {
+    countdownElement.textContent = "ONE MORE DAY - COME BACK TOMMORROW";
   } else {
-    return days;
+    countdownElement.textContent = daysRemaining;
   }
-}
-
-document.getElementById('countdown').textContent = daysUntilSeptember23();
