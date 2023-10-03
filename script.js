@@ -10,7 +10,7 @@ function daysUntilSeptember23() {
   const days = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
   if (days === 0) {
-    return "TODAY IS MY BIRTHDAY OMFG THANKS FOR VISITNG MY BIO ON THIS SPECIAL DAY";
+    return "TODAY IS MY BIRTHDAY!!!! THANKS FOR VISITING MY BIO TODAY!!!!";
   } else {
     return days;
   }
