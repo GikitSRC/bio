@@ -361,8 +361,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
 }
 .certimg {
-  height: 200px;
-  width: 200px;
+  width: 20%;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
