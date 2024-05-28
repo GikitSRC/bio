@@ -7,9 +7,9 @@ document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
 });
 
-window.onload = function() {
+window.onload = function () {
     terminalInput.focus();
-  };
+};
 
 setTimeout(() => {
     loading.style.display = "none";
@@ -90,12 +90,29 @@ terminalInput.addEventListener('keypress', function (event) {
     }
 });
 
-options = {
-    "cursorOuter": "circle",
-    "hoverEffect": "circle-move",
-    "hoverItemMove": false,
-    "defaultCursor": false,
-    "outerWidth": 30,
-    "outerHeight": 30
-      };
-    magicMouse(options);
+document.addEventListener("DOMContentLoaded", function () {
+    const texts = [
+        "This website is actually made by me ☺️",
+        "Did you know... that this website uses no images?? 🤯",
+        "OH MY GOD HI!!!!",
+        "Do not jump off a cliff. It is not advised.",
+        "Hey... try typing in never in the command line 😉"
+    ];
+
+    function getRandomText() {
+        const randomNumber = Math.random() * 100;
+        if (randomNumber < 1) {
+            return texts[texts.length - 1];
+        } else {
+            const randomIndex = Math.floor(Math.random() * (texts.length - 1));
+            return texts[randomIndex];
+        }
+    }
+
+    function setRandomFooterText() {
+        const footer = document.getElementById("footer");
+        footer.textContent = getRandomText();
+    }
+
+    setRandomFooterText();
+});
