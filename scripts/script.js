@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Did you know... that this website uses no images?? 🤯",
         "OH MY GOD HI!!!!",
         "Do not jump off a cliff. It is not advised.",
-        "Hey... try typing in never in the command line 😉"
+        "Hey... try typing in never in the command line 😉 \n By the way, this text has a 1% chance of showing up. Luckey you!"
     ];
 
     function getRandomText() {
