@@ -66,6 +66,15 @@ function processCommand(command) {
         case 'gui':
             openGui();
             break;
+        case 'easter':
+            printOutput('what easter egg?');
+            break;
+        case 'titties':
+            printOutput('yea no i didnt add this');
+            break;
+        case 'rick' || 'rickroll' || 'rick astley' || 'astley' || 'never' || 'never gonna' || 'give you up' || 'take you down' || 'let you down' || 'run around and desert you' || 'desert you':
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; //you rickrolled yourself looking at this code 
+            break;
         default:
             printOutput('Uh oh! I don\'t know that command. Try typing help for a list of commands.');
             break;
