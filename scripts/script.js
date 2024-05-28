@@ -35,7 +35,7 @@ function processCommand(command) {
             printOutput('projects       List my projects');
             printOutput('certificates   List my certifications');
             printOutput('skills         List my skills');
-            printOutput('gui            Open the GUI version of my bio');
+            printOutput('gui            I\'m a silly goofball and I want a GUI');
             break;
         case 'clear':
             terminalOutput.innerHTML = ``; + '\n';
